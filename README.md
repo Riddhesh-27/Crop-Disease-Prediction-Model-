@@ -1,5 +1,8 @@
 # 🌱 CropScan AI - Intelligent Crop Disease Predictor & Agri-Tech Platform
 
+### 🚀 **Live Demo: [cropscan-ai.onrender.com](https://cropscan-ai.onrender.com)**
+*(Note: As this is hosted on a free tier, it may take about 50 seconds to "wake up" if it hasn't been visited recently).*
+
 Welcome to **CropScan AI**, a comprehensive Project-Based Learning (PBL) application developed for Semester 6. 
 
 This project bridges the gap between Deep Learning and modern web development, providing farmers and agricultural workers with an all-in-one platform to diagnose crop diseases, get treatment recommendations, and purchase agricultural products.
