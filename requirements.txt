@@ -1,6 +1,6 @@
 Flask
 Werkzeug
-numpy<1.24
-tensorflow==2.12.0
+numpy
+tensorflow>=2.16.1
 gunicorn
 h5py
