@@ -9,9 +9,10 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-MODEL_PATH = 'crop_disease_model.h5'
-CLASS_INDICES_PATH = 'class_indices.json'
-DISEASE_INFO_PATH = 'disease_info.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'crop_disease_model.h5')
+CLASS_INDICES_PATH = os.path.join(BASE_DIR, 'class_indices.json')
+DISEASE_INFO_PATH = os.path.join(BASE_DIR, 'disease_info.json')
 
 model = None
 class_names = None
