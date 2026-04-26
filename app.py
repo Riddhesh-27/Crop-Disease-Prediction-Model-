@@ -77,16 +77,33 @@ def predict():
                 predicted_class_idx = np.argmax(predictions[0])
                 confidence = float(predictions[0][predicted_class_idx]) * 100
                 
+                # Get the top two predictions to check for "Confusion"
+                top_indices = np.argsort(predictions[0])[-2:]
+                top_conf = predictions[0][top_indices[-1]] * 100
+                second_conf = predictions[0][top_indices[-2]] * 100
+                conf_gap = top_conf - second_conf
+
+                # ULTRA-STRICT CHECKS (Fixes "Wallpaper" and "Random Guesses")
+                # 1. Must be over 80% confident
+                # 2. Must be significantly more confident than the second-best guess (conf_gap > 20)
+                if confidence < 80.0 or conf_gap < 20.0:
+                    return jsonify({
+                        'error': 'Image not recognized as a supported crop. Please ensure the leaf is centered and well-lit.',
+                        'confidence': confidence,
+                        'is_uncertain': True
+                    })
+
                 predicted_class_name = class_names[predicted_class_idx]
                 
                 # Retrieve info
                 info = disease_info.get(predicted_class_name, {
-                    "description": "Information not available.",
+                    "description": "Information not available for this specific class.",
                     "solution": "Consult an agricultural expert.",
-                    "fertilizers": "General NPK fertilizer",
-                    "pesticides": "As recommended by local authorities"
+                    "fertilizers": "General organic compost",
+                    "pesticides": "Natural neem oil or as recommended locally"
                 })
                 
+                # Quality score logic
                 quality_score = confidence if 'healthy' not in predicted_class_name.lower() else 100.0
                 
                 return jsonify({
