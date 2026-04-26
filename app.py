@@ -17,6 +17,9 @@ model = None
 class_names = None
 disease_info = {}
 
+APP_VERSION = "2.0.0-FIX"
+print(f"🚀 STARTING APP VERSION: {APP_VERSION}", flush=True)
+
 # Load Disease Info
 if os.path.exists(DISEASE_INFO_PATH):
     with open(DISEASE_INFO_PATH, 'r') as f:
@@ -30,13 +33,13 @@ try:
             class_indices = json.load(f)
         # Invert dictionary to get index -> class_name
         class_names = {v: k for k, v in class_indices.items()}
-        print("✅ SUCCESS: Model and class mapping loaded.")
-        print(f"📊 Total Classes: {len(class_names)}")
+        print("✅ SUCCESS: Model and class mapping loaded.", flush=True)
+        print(f"📊 Total Classes: {len(class_names)}", flush=True)
         # Print first 5 for debugging
-        for i in range(5):
-            print(f"   - Index {i}: {class_names.get(i)}")
+        for i in range(min(5, len(class_names))):
+            print(f"   - Index {i}: {class_names.get(i)}", flush=True)
     else:
-        print("❌ ERROR: Model or class indices not found! Using Mock predictions.")
+        print("❌ ERROR: Model or class indices not found! Using Mock predictions.", flush=True)
 except Exception as e:
     print(f"Error loading model: {e}")
 
@@ -81,9 +84,9 @@ def predict():
                 predicted_class_idx = np.argmax(predictions[0])
                 confidence = float(predictions[0][predicted_class_idx]) * 100
                 
-                print(f"🔍 DEBUG: Prediction for {filepath}")
-                print(f"   - Top Index: {predicted_class_idx}")
-                print(f"   - Confidence: {confidence:.2f}%")
+                print(f"🔍 DEBUG: Prediction for {filepath}", flush=True)
+                print(f"   - Top Index: {predicted_class_idx}", flush=True)
+                print(f"   - Confidence: {confidence:.2f}%", flush=True)
                 
                 # Get the top two predictions to check for "Confusion"
                 top_indices = np.argsort(predictions[0])[-2:]
