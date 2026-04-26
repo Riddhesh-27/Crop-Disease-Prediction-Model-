@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <h1>AI-Powered <span class="text-accent">Crop Disease</span> Detection</h1>
+        <p>Instantly analyze plant health, diagnose diseases, and get expert treatment recommendations powered by deep learning.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('analyze') }}" class="btn-primary large-btn"><i class="fa-solid fa-camera"></i> Start Analysis</a>
+            <a href="#features" class="btn-secondary large-btn">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<section id="features" class="features-section">
+    <h2 class="section-title">Supported Crops & Capabilities</h2>
+    <div class="flashcard-container">
+        <!-- Flashcard 1 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1590682680695-43b964a3ae17?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-solid fa-apple-whole"></i> Apple</h3>
+                    <p>Detect Scab, Black Rot & Cedar Rust</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Apple Diseases</h4>
+                    <p>Our AI accurately identifies up to 4 different health states of apple leaves to protect your orchard.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 2 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1592841200221-a6898f307baa?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-solid fa-seedling"></i> Tomato</h3>
+                    <p>Detect 9+ Diseases</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Tomato Diseases</h4>
+                    <p>From Late Blight to Spider Mites, keep your tomatoes healthy with instant diagnostics.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 3 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-brands fa-pagelines"></i> Corn & Wheat</h3>
+                    <p>Identify Blights & Rust</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Staple Crops</h4>
+                    <p>Analyze Northern Leaf Blight and Common Rust in corn crops quickly and easily.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 4 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-solid fa-potato"></i> Potato</h3>
+                    <p>Detect Early & Late Blight</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Potato Diseases</h4>
+                    <p>Prevent severe crop loss by instantly identifying Potato Blights before they spread.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 5 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1596538356942-5dbbfcb7a87e?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-solid fa-wine-glass"></i> Grape</h3>
+                    <p>Detect Black Rot & Esca</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Grapevine Health</h4>
+                    <p>Keep your vineyards healthy by scanning leaves for common fungal infections.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 6 -->
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="flashcard-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1582049432655-e7eb0089e5a1?q=80&w=600&auto=format&fit=crop');">
+                    <h3><i class="fa-solid fa-lemon"></i> Citrus</h3>
+                    <p>Detect Citrus Greening</p>
+                </div>
+                <div class="flashcard-back">
+                    <h4>Citrus Protection</h4>
+                    <p>Diagnose Haunglongbing (Citrus Greening) to protect orange and lemon orchards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

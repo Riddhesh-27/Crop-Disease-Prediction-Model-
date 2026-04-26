@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropScan AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf text-accent"></i> CropScan AI
+        </div>
+        <ul class="nav-links" id="main-nav">
+            <li><a href="{{ url_for('home') }}" class="nav-item">Home</a></li>
+            <li><a href="{{ url_for('shop') }}" class="nav-item">Marketplace</a></li>
+            <li><a href="{{ url_for('analyze') }}" class="nav-item">Analyze</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-item">About Us</a></li>
+            <li>
+                <div class="cart-icon-wrapper" id="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Global Background -->
+    <div class="background-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Sliding Shopping Cart Panel -->
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-row"><span>Subtotal:</span> <span id="cart-subtotal">₹0.00</span></div>
+            <div class="cart-row"><span>Tax (GST 18%):</span> <span id="cart-tax">₹0.00</span></div>
+            <div class="cart-row total"><span>Total:</span> <span id="cart-total">₹0.00</span></div>
+            <button class="btn-primary full-width" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Global Floating Chatbot Widget -->
+    <div class="floating-chat-widget">
+        <!-- The Window -->
+        <div class="chat-window hidden" id="chat-window">
+            <div class="chat-header">
+                <h3><i class="fa-solid fa-robot"></i> Expert Assistant</h3>
+                <span class="status-dot"></span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    Hello! I am your CropScan assistant. I can help you treat diseases or recommend which crops to plant based on your soil type and temperature!
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-chat" class="btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <!-- The Floating Button -->
+        <button class="chat-toggle-btn" id="chat-toggle-btn">
+            <i class="fa-solid fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Checkout Simulation Modal -->
+    <div class="checkout-modal hidden" id="checkout-modal">
+        <div class="checkout-box glass-panel">
+            <h2><i class="fa-solid fa-shield-check"></i> Secure Checkout</h2>
+            <p>Total Amount: <strong id="checkout-total-display">₹0.00</strong></p>
+            <div class="checkout-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Card Number" required>
+                <div class="flex-row">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+                <button class="btn-primary full-width" id="pay-btn">Pay Now</button>
+                <button class="btn-secondary full-width" id="cancel-checkout" style="margin-top: 10px;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CropScan AI | PBL Sem 6 Project</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

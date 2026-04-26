@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="analyze-container">
+    <div class="upload-section glass-panel">
+        <h2><i class="fa-solid fa-cloud-arrow-up"></i> Upload Crop Image</h2>
+        <p>Upload a clear image of the plant leaf for the best results.</p>
+        
+        <form id="upload-form" enctype="multipart/form-data">
+            <div class="drop-zone" id="drop-zone">
+                <span class="drop-zone__prompt">Drag & Drop image here or click to upload</span>
+                <input type="file" name="image" id="file-input" class="drop-zone__input" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="analyze-btn">Analyze Disease</button>
+        </form>
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing with Neural Network...</p>
+        </div>
+    </div>
+
+    <!-- Results Section (Hidden initially) -->
+    <div id="results-section" class="results-section hidden">
+        <div class="results-grid">
+            
+            <!-- Analysis Report -->
+            <div class="report-panel glass-panel">
+                <h3>Analysis Report</h3>
+                <div class="result-header">
+                    <img id="preview-image" src="" alt="Uploaded Crop" class="preview-img">
+                    <div class="result-title">
+                        <h4 id="disease-name">Disease Name</h4>
+                        <div class="quality-bar-container">
+                            <span class="quality-label">Plant Quality:</span>
+                            <div class="quality-bar">
+                                <div class="quality-fill" id="quality-fill"></div>
+                            </div>
+                            <span id="quality-text" class="quality-text">90%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="report-details">
+                    <div class="detail-box">
+                        <h5><i class="fa-solid fa-circle-info"></i> Description</h5>
+                        <p id="desc-text">Description goes here.</p>
+                    </div>
+                    <div class="detail-box">
+                        <h5><i class="fa-solid fa-flask"></i> Recommended Fertilizers</h5>
+                        <p id="fert-text">Fertilizer info goes here.</p>
+                    </div>
+                    <div class="detail-box">
+                        <h5><i class="fa-solid fa-bug-slash"></i> Recommended Pesticides</h5>
+                        <p id="pest-text">Pesticide info goes here.</p>
+                    </div>
+                    <div class="detail-box">
+                        <h5><i class="fa-solid fa-hand-holding-heart"></i> Solution / Treatment</h5>
+                        <p id="sol-text">Solution info goes here.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatbot Panel Removed (Now Global in base.html) -->
+
+        </div>
+    </div>
+</div>
+{% endblock %}

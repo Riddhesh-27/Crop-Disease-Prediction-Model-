@@ -1,0 +1,18 @@
+# Dataset Folders (Too large for GitHub)
+train/
+valid/
+test/
+dataset/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# MacOS/Windows specific files
+.DS_Store
+Thumbs.db

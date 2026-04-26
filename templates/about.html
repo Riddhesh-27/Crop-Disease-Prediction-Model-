@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="about-container glass-panel">
+    <h2>About CropScan AI</h2>
+    <p>This application was developed as part of our **PBL Semester 6** Project. Our goal is to leverage Deep Learning and Artificial Intelligence to solve real-world agricultural problems.</p>
+    
+    <h3>How it Works</h3>
+    <p>We trained a Convolutional Neural Network (MobileNetV2) on the PlantVillage Augmented Dataset containing over 38 different classes of crops and their diseases. The model analyzes the visual patterns of the plant leaves to determine its health status.</p>
+    
+    <h3>Features</h3>
+    <ul>
+        <li>97%+ Accuracy using Transfer Learning.</li>
+        <li>Instant Context-Aware Chatbot Assistance.</li>
+        <li>Beautiful UI with Glassmorphism and Custom Glow Cursors.</li>
+        <li>Detailed Reports for Fertilizers and Solutions.</li>
+    </ul>
+
+    <div class="contact-section">
+        <h3>Contact Us</h3>
+        <p>If you have any questions, want to report an issue, or simply want to learn more about CropScan AI, feel free to reach out directly!</p>
+        <form action="mailto:RIDDHESHGUJARATHI223708@GMAIL.COM" method="get" enctype="text/plain" class="contact-form">
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="body" rows="4" placeholder="Your message..." required></textarea>
+            <button type="submit" class="btn-primary"><i class="fa-solid fa-envelope"></i> Send Email</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

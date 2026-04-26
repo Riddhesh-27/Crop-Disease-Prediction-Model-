@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="shop-header">
+    <h1>Agricultural <span class="text-accent">Marketplace</span></h1>
+    <p>Premium Seeds, Fertilizers, and Pesticides for your crops.</p>
+</div>
+
+<!-- Shop Navigation / Categories -->
+<div class="shop-categories">
+    <button class="category-btn active" data-filter="all">All Products</button>
+    <button class="category-btn" data-filter="seeds">Seeds</button>
+    <button class="category-btn" data-filter="fertilizers">Fertilizers</button>
+    <button class="category-btn" data-filter="pesticides">Pesticides</button>
+</div>
+
+<!-- Product Grid -->
+<div class="product-grid" id="product-grid">
+    <!-- ================= SEEDS (5 items) ================= -->
+    <div class="product-card glass-panel" data-category="seeds" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="product-img" style="background-image: url('{{ url_for('static', filename='images/products/corn_seeds.png') }}');"></div>
+        <div class="product-info">
+            <span class="product-badge">Seeds</span>
+            <h3>Premium Corn Seeds</h3>
+            <p>High-yield, disease-resistant corn seeds suitable for all soil types.</p>
+            <div class="product-bottom">
+                <span class="price">₹1999</span>
+                <button class="add-to-cart-btn" data-id="1" data-name="Premium Corn Seeds" data-price="1999"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="seeds" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-seedling"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Seeds</span>
+            <h3>Roma Tomato Seeds</h3>
+            <p>Perfect for sauces. Resistant to early and late blights.</p>
+            <div class="product-bottom">
+                <span class="price">₹950</span>
+                <button class="add-to-cart-btn" data-id="2" data-name="Roma Tomato Seeds" data-price="950"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="seeds" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img" style="background-image: url('{{ url_for('static', filename='images/products/potato_seeds.png') }}');"></div>
+        <div class="product-info">
+            <span class="product-badge">Seeds</span>
+            <h3>Russet Potato Seeds</h3>
+            <p>Certified disease-free potato seeds for robust yields.</p>
+            <div class="product-bottom">
+                <span class="price">₹2800</span>
+                <button class="add-to-cart-btn" data-id="3" data-name="Russet Potato Seeds" data-price="2800"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="seeds" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img" style="background-image: url('{{ url_for('static', filename='images/products/grape_seeds.png') }}');"></div>
+        <div class="product-info">
+            <span class="product-badge">Seeds</span>
+            <h3>Cabernet Grape Seeds</h3>
+            <p>Start your vineyard with these premium grape seeds.</p>
+            <div class="product-bottom">
+                <span class="price">₹1500</span>
+                <button class="add-to-cart-btn" data-id="4" data-name="Cabernet Grape Seeds" data-price="1500"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="seeds" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-brands fa-pagelines"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Seeds</span>
+            <h3>Sweet Strawberry Seeds</h3>
+            <p>High-germination rate seeds for sweet, disease-resistant strawberries.</p>
+            <div class="product-bottom">
+                <span class="price">₹800</span>
+                <button class="add-to-cart-btn" data-id="5" data-name="Sweet Strawberry Seeds" data-price="800"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FERTILIZERS (5 items) ================= -->
+    <div class="product-card glass-panel" data-category="fertilizers" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img" style="background-image: url('{{ url_for('static', filename='images/products/npk_fertilizer.png') }}');"></div>
+        <div class="product-info">
+            <span class="product-badge">Fertilizers</span>
+            <h3>NPK 10-10-10 Organic</h3>
+            <p>Balanced, slow-release fertilizer for overall plant health.</p>
+            <div class="product-bottom">
+                <span class="price">₹3600</span>
+                <button class="add-to-cart-btn" data-id="6" data-name="NPK 10-10-10 Organic" data-price="3600"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="fertilizers" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img" style="background-image: url('{{ url_for('static', filename='images/products/potassium_booster.png') }}');"></div>
+        <div class="product-info">
+            <span class="product-badge">Fertilizers</span>
+            <h3>Potassium Booster</h3>
+            <p>Increases disease resistance in fruits and vegetables.</p>
+            <div class="product-bottom">
+                <span class="price">₹2600</span>
+                <button class="add-to-cart-btn" data-id="7" data-name="Potassium Booster" data-price="2600"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="fertilizers" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-flask"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Fertilizers</span>
+            <h3>Nitrogen Max Plus</h3>
+            <p>Accelerates vegetative growth for corn, wheat, and leafy greens.</p>
+            <div class="product-bottom">
+                <span class="price">₹3000</span>
+                <button class="add-to-cart-btn" data-id="8" data-name="Nitrogen Max Plus" data-price="3000"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="fertilizers" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-bottle-droplet"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Fertilizers</span>
+            <h3>Liquid Seaweed Extract</h3>
+            <p>Organic liquid fertilizer loaded with trace minerals and hormones.</p>
+            <div class="product-bottom">
+                <span class="price">₹1750</span>
+                <button class="add-to-cart-btn" data-id="9" data-name="Liquid Seaweed Extract" data-price="1750"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="fertilizers" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-bone"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Fertilizers</span>
+            <h3>Bone Meal Phosphorus</h3>
+            <p>Excellent for root growth and fruit development in tomatoes.</p>
+            <div class="product-bottom">
+                <span class="price">₹1600</span>
+                <button class="add-to-cart-btn" data-id="10" data-name="Bone Meal Phosphorus" data-price="1600"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= PESTICIDES (5 items) ================= -->
+    <div class="product-card glass-panel" data-category="pesticides" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-spray-can"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Pesticides</span>
+            <h3>Copper Fungicide</h3>
+            <p>Highly effective against blights, rusts, and powdery mildew.</p>
+            <div class="product-bottom">
+                <span class="price">₹1500</span>
+                <button class="add-to-cart-btn" data-id="11" data-name="Copper Fungicide" data-price="1500"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="pesticides" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-leaf"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Pesticides</span>
+            <h3>Organic Neem Oil</h3>
+            <p>Natural preventative measure against spider mites and insects.</p>
+            <div class="product-bottom">
+                <span class="price">₹1200</span>
+                <button class="add-to-cart-btn" data-id="12" data-name="Organic Neem Oil" data-price="1200"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="pesticides" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-shield-virus"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Pesticides</span>
+            <h3>Chlorothalonil Broad Spectrum</h3>
+            <p>Advanced formula for late blight and severe fungal infections.</p>
+            <div class="product-bottom">
+                <span class="price">₹2280</span>
+                <button class="add-to-cart-btn" data-id="13" data-name="Chlorothalonil Broad Spectrum" data-price="2280"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="pesticides" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-pump-soap"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Pesticides</span>
+            <h3>Insecticidal Soap Spray</h3>
+            <p>Safe and effective treatment for aphids and soft-bodied pests.</p>
+            <div class="product-bottom">
+                <span class="price">₹1050</span>
+                <button class="add-to-cart-btn" data-id="14" data-name="Insecticidal Soap Spray" data-price="1050"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card glass-panel" data-category="pesticides" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <div class="product-img fallback-img"><i class="fa-solid fa-bug-slash"></i></div>
+        <div class="product-info">
+            <span class="product-badge">Pesticides</span>
+            <h3>B.T. Caterpillar Control</h3>
+            <p>Biological pesticide specifically targeting destructive caterpillars.</p>
+            <div class="product-bottom">
+                <span class="price">₹1300</span>
+                <button class="add-to-cart-btn" data-id="15" data-name="B.T. Caterpillar Control" data-price="1300"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

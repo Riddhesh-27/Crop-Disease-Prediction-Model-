@@ -1,0 +1,230 @@
+{
+    "Apple___Apple_scab": {
+        "description": "Apple scab is a disease caused by the ascomycete fungus Venturia inaequalis. The disease manifests as dull black or grey-brown lesions on leaves and fruits.",
+        "solution": "Remove fallen leaves. Apply fungicides like captan or myclobutanil.",
+        "fertilizers": "Balanced NPK (10-10-10) to promote general tree health.",
+        "pesticides": "Fungicides containing copper or sulfur."
+    },
+    "Apple___Black_rot": {
+        "description": "Black rot is a disease affecting Apple crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Apple immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Black rot."
+    },
+    "Apple___Cedar_apple_rust": {
+        "description": "Cedar apple rust is a disease affecting Apple crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Apple immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Cedar apple rust."
+    },
+    "Apple___healthy": {
+        "description": "The Apple plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Apple.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Blueberry___healthy": {
+        "description": "The Blueberry plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Blueberry.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "description": "Powdery mildew is a disease affecting Cherry (including sour) crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Cherry (including sour) immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Powdery mildew."
+    },
+    "Cherry_(including_sour)___healthy": {
+        "description": "The Cherry (including sour) plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Cherry (including sour).",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "description": "Cercospora leaf spot Gray leaf spot is a disease affecting Corn (maize) crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Corn (maize) immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Cercospora leaf spot Gray leaf spot."
+    },
+    "Corn_(maize)___Common_rust_": {
+        "description": "Common rust  is a disease affecting Corn (maize) crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Corn (maize) immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Common rust ."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "description": "Northern Leaf Blight is a disease affecting Corn (maize) crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Corn (maize) immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Northern Leaf Blight."
+    },
+    "Corn_(maize)___healthy": {
+        "description": "The Corn (maize) plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Corn (maize).",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Grape___Black_rot": {
+        "description": "Black rot is a disease affecting Grape crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Grape immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Black rot."
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "description": "Esca (Black Measles) is a disease affecting Grape crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Grape immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Esca (Black Measles)."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "description": "Leaf blight (Isariopsis Leaf Spot) is a disease affecting Grape crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Grape immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Leaf blight (Isariopsis Leaf Spot)."
+    },
+    "Grape___healthy": {
+        "description": "The Grape plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Grape.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "description": "Haunglongbing (Citrus greening) is a disease affecting Orange crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Orange immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Haunglongbing (Citrus greening)."
+    },
+    "Peach___Bacterial_spot": {
+        "description": "Bacterial spot is a disease affecting Peach crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Peach immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Bacterial spot."
+    },
+    "Peach___healthy": {
+        "description": "The Peach plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Peach.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "description": "Bacterial spot is a disease affecting Pepper, bell crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Pepper, bell immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Bacterial spot."
+    },
+    "Pepper,_bell___healthy": {
+        "description": "The Pepper, bell plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Pepper, bell.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Potato___Early_blight": {
+        "description": "Early blight is a disease affecting Potato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Potato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Early blight."
+    },
+    "Potato___Late_blight": {
+        "description": "Late blight is a disease affecting Potato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Potato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Late blight."
+    },
+    "Potato___healthy": {
+        "description": "The Potato plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Potato.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Raspberry___healthy": {
+        "description": "The Raspberry plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Raspberry.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Soybean___healthy": {
+        "description": "The Soybean plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Soybean.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Squash___Powdery_mildew": {
+        "description": "Powdery mildew is a disease affecting Squash crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Squash immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Powdery mildew."
+    },
+    "Strawberry___Leaf_scorch": {
+        "description": "Leaf scorch is a disease affecting Strawberry crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Strawberry immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Leaf scorch."
+    },
+    "Strawberry___healthy": {
+        "description": "The Strawberry plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Strawberry.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    },
+    "Tomato___Bacterial_spot": {
+        "description": "Bacterial spot is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Bacterial spot."
+    },
+    "Tomato___Early_blight": {
+        "description": "Early blight is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Early blight."
+    },
+    "Tomato___Late_blight": {
+        "description": "Late blight is a highly destructive disease of tomatoes and potatoes caused by the water mold Phytophthora infestans.",
+        "solution": "Remove and destroy infected plants immediately. Improve air circulation.",
+        "fertilizers": "Avoid high nitrogen fertilizers.",
+        "pesticides": "Copper fungicides, chlorothalonil."
+    },
+    "Tomato___Leaf_Mold": {
+        "description": "Leaf Mold is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Leaf Mold."
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "description": "Septoria leaf spot is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Septoria leaf spot."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "description": "Spider mites Two-spotted spider mite is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Spider mites Two-spotted spider mite."
+    },
+    "Tomato___Target_Spot": {
+        "description": "Target Spot is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Target Spot."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "description": "Tomato Yellow Leaf Curl Virus is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Tomato Yellow Leaf Curl Virus."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "description": "Tomato mosaic virus is a disease affecting Tomato crops. It can cause significant damage to the yield if not treated promptly.",
+        "solution": "Remove and destroy infected leaves. Improve air circulation and avoid overhead watering.",
+        "fertilizers": "Avoid excessive nitrogen. Use a potassium-rich fertilizer to boost Tomato immunity.",
+        "pesticides": "Apply appropriate fungicides or bactericides recommended for Tomato mosaic virus."
+    },
+    "Tomato___healthy": {
+        "description": "The Tomato plant is completely healthy and thriving.",
+        "solution": "Continue your current care routine. Ensure proper watering and sunlight.",
+        "fertilizers": "Use standard organic compost or balanced NPK for Tomato.",
+        "pesticides": "None required. Use neem oil periodically as a preventive measure."
+    }
+}
